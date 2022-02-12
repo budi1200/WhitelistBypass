@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "si.budimir"
-version = "1.0-SNAPSHOT"
+version = "1.1-SNAPSHOT"
 
 java {
     toolchain.languageVersion.set(JavaLanguageVersion.of(17))
@@ -43,4 +43,6 @@ bukkit {
             default = net.minecrell.pluginyml.bukkit.BukkitPluginDescription.Permission.Default.OP
         }
     }
+
+    libraries = listOf("org.jetbrains.kotlin:kotlin-stdlib:1.6.10")
 }
